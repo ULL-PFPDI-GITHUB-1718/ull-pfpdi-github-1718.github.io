@@ -18,3 +18,4 @@
 * [GitHub Training & Guides YouTube](https://www.youtube.com/githubguides)
 * [Classroom videos en YouTube](https://www.youtube.com/user/GitHubGuides/search?query=classroom)
 * [Udacity Course: How to Use Git and GitHub](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
+* [GitHub Essentials](https://joeyklee.github.io/friendly-github-intro/guides/github-essentials/)
