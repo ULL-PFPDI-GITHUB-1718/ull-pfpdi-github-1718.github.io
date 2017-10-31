@@ -6,6 +6,8 @@
 
 ### Ficha
 
+* [Datos del curso](resources/README.md)
+
 ### Campus Virtual 
 
 ### References
