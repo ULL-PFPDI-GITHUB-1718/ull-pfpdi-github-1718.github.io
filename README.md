@@ -6,7 +6,7 @@
 
 ### Ficha
 
-* [Datos del curso](resources/README.md)
+* [Datos del curso](resources/)
 
 ### Campus Virtual 
 
