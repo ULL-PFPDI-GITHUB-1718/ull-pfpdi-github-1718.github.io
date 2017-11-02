@@ -5,6 +5,6 @@
 * [GitHub Pages](github-pages.md)
 * [Classroom](classroom.md)
 * [Automated Grading/Evaluación Automática](automated-gradingevaluacion-automatica.md)
-* [Git](git.md)
 * [GitHub Desktop](github-desktop.md)
+* [Git](git.md)
 
