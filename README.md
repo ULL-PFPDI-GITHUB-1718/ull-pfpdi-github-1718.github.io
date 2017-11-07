@@ -9,6 +9,7 @@
 
 ### Presentación 
 
+[Presentacion en las Jornadas de Innovación Educativa 2017 de la ULL](resources/github-education-enelaula-jie2017.pdf)
 ### Ficha
 
 * [Datos del curso](resources/)
