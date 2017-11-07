@@ -29,3 +29,7 @@ gulp.task('apuntes', shell.task(
 gulp.task("pre-install", shell.task([
       "npm i -g gitbook-cli",
 ]));
+
+gulp.task("push", shell.task([
+      "git push github master",
+]));
