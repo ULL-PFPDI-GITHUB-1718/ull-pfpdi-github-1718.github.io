@@ -18,18 +18,20 @@ gulp.task('deploy', ['build'], shell.task(
   )
 );
 
-gulp.task('ghrepo', shell.task(
+gulp.task('ghrepo', shell.task( // Open a browser in the github book repo
   'hub browse ULL-PFPDI-GITHUB-1718/ull-pfpdi-github-1718.github.io'
 ));
 
-gulp.task('apuntes', shell.task(
+gulp.task('apuntes', shell.task( // Open web browser in the github deployment of this book
   'open https://ull-pfpdi-github-1718.github.io'
 ));
 
 gulp.task("pre-install", shell.task([
       "npm i -g gitbook-cli",
+			"brew install hub"
 ]));
 
-gulp.task("push", shell.task([
-      "git push github master",
+gulp.task("push", shell.task([ // push to github not to gitbook
+      'git ci -am "new version" && git push github master',
 ]));
+
