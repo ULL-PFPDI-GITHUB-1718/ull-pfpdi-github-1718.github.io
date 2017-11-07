@@ -14,7 +14,10 @@ gulp.task('build', shell.task([          // gitbook destroys everything in the _
 );
 
 gulp.task('deploy', ['build'], shell.task(
-    [ 'cd _book && git ci -am "new version" && git push git@github.com:ULL-PFPDI-GITHUB-1718/ull-pfpdi-github-1718.github.io.git master']
+    [ 'cd _book && ' +                 // change to the HTML directory
+      'git ci -am "new version" && ' + // commit changes
+      'git push git@github.com:ULL-PFPDI-GITHUB-1718/ull-pfpdi-github-1718.github.io.git master' // push changes to github repo
+    ]
   )
 );
 
@@ -26,7 +29,7 @@ gulp.task('apuntes', shell.task( // Open web browser in the github deployment of
   'open https://ull-pfpdi-github-1718.github.io'
 ));
 
-gulp.task("pre-install", shell.task([
+gulp.task("pre-install", shell.task([ // global dependencies
       "npm i -g gitbook-cli",
 			"brew install hub"
 ]));
