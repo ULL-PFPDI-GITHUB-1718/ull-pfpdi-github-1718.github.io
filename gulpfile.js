@@ -10,3 +10,8 @@ gulp.task('build', shell.task([
       { verbose: true }
   )
 );
+
+gulp.task('deploy', ['build'], shell.task(
+    []
+  )
+);

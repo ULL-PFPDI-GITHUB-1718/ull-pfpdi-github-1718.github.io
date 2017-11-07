@@ -3,3 +3,4 @@ gulpfile.js
 *.swp
 package*.json
 post-book
+.gitignore
