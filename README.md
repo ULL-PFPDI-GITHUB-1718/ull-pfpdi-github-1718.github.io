@@ -2,6 +2,11 @@
 
 ### Profesorado
 
+* [Casiano](https://github.com/crguezl)
+* [Coro](https://github.com/coromoto)
+* [Eduardo](https://github.com/esegredo)
+* [Gara](https://github.com/garamira)
+
 ### Presentación 
 
 ### Ficha
