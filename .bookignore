@@ -1,3 +1,5 @@
 _book-git
 gulpfile.js
 *.swp
+package*.json
+post-book

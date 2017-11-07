@@ -1,11 +1,12 @@
 const gulp = require('gulp');
 const shell = require('gulp-shell');
 
-gulp.task('build', shell.task(
-      'cp -fR _book/.git/ _book-git',
-      'gitbook build', 
-      'mv _book-git _book/.git',
-      'cp -fR post-book/* _book/'
+gulp.task('build', shell.task([
+        'cp -fR _book/.git/ _book-git',
+        'gitbook build', 
+        'mv _book-git _book/.git',
+        'cp -fR post-book/* _book/'
+      ],
       { verbose: true }
   )
 );
