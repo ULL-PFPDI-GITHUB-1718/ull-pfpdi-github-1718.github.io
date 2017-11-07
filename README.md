@@ -14,6 +14,7 @@
 ### Ficha
 
 * [Datos del curso](resources/171817_ficha_convc.pdf)
+* [PFPDI Noviembre 17/18](https://www.ull.es/Private/folder/institucional/ull/calidad/Cursos%2017_18/Noviembre_Inscripciones.pdf)
 
 ### Campus Virtual 
 
