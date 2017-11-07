@@ -12,6 +12,6 @@ gulp.task('build', shell.task([
 );
 
 gulp.task('deploy', ['build'], shell.task(
-    []
+    [ 'cd _book && git ci -am && git push github master']
   )
 );

@@ -4,3 +4,4 @@ gulpfile.js
 package*.json
 post-book
 .gitignore
+.bookignore
