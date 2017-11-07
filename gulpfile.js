@@ -3,7 +3,7 @@ const shell = require('gulp-shell');
 
 gulp.task('default', ['deploy']);
 
-gulp.task('build', shell.task([          // gitbook destroys everything in the _book directory!
+gulp.task('build', shell.task([         // gitbook destroys everything in the _book directory!
         'cp -fR _book/.git/ _book-git', // save git info
         'gitbook build',                // build HTML in _book
         'mv _book-git _book/.git',      // restore git info
