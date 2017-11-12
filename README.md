@@ -2,7 +2,7 @@
 
 ### Profesorado
 
-* [Casiano](https://github.com/crguezl)
+* [Casiano](https://crguezl.github.io/_book/) 
 * [Coro](https://github.com/coromoto)
 * [Eduardo](https://github.com/esegredo)
 * [Gara](https://github.com/garamira)
