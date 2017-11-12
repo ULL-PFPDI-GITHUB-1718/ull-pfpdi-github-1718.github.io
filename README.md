@@ -18,7 +18,8 @@
 
 ### References
 
-
+* [Apuntes del curso](https://ull-pfpdi-github-1718.github.io/) desplegados en GitHub
+* [Apuntes del curso](https://casianorodriguezleon.gitbooks.io/curso-github/content/) desplegados en GitBook
 * [Presentacion en las Jornadas de Innovación Educativa 2017 de la ULL](resources/github-education-enelaula-jie2017.pdf)
 * [GitHub Training & Guides YouTube](https://www.youtube.com/githubguides)
 * [Udacity Course: How to Use Git and GitHub](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
