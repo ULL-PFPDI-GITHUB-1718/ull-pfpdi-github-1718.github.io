@@ -18,6 +18,8 @@
 
 ### Campus Virtual 
 
+* [Integración de las herramientas "Github Education" en el aula](https://campusvirtual.ull.es/formacion/course/view.php?id=2622) en el Campus Virtual
+
 ### References
 
 * [GitHub Training & Guides YouTube](https://www.youtube.com/githubguides)
