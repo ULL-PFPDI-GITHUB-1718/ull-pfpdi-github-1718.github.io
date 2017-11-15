@@ -25,6 +25,10 @@ gulp.task('ghrepo', shell.task( // Open a browser in the github book repo
   'hub browse ULL-PFPDI-GITHUB-1718/ull-pfpdi-github-1718.github.io'
 ));
 
+gulp.task('sourcesrepo', shell.task( // Open a browser in the github book repo
+  'hub browse ULL-PFPDI-GITHUB-1718/ull-pfpdi-github-1718.github.io.sources'
+));
+
 gulp.task('apuntes', shell.task( // Open web browser in the github deployment of this book
   'open https://ull-pfpdi-github-1718.github.io'
 ));
