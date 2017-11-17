@@ -3,7 +3,7 @@
 * [Organizing members into teams](https://help.github.com/articles/organizing-members-into-teams/)
 
 
-#### Ejercicio: Crear una Organización {{organization}}
+#### Ejercicio: Crear una Organización {#organization}
 
 Cree una organización `ULL-...` para una asignatura real que imparte en la ULL. 
 
