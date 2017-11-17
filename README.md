@@ -18,6 +18,7 @@
 * [git](https://git-scm.com/)
 * [github](github.com)
 * [Terminal Unix](https://www.tutorialspoint.com/unix_terminal_online.php)
+* [hub](https://github.com/github/hub)
 * [Editor Atom](https://atom.io/)
 * [gitbook](https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md)
 
