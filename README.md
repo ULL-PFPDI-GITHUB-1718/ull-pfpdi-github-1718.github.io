@@ -13,6 +13,14 @@
 * [PFPDI Noviembre 17/18](https://www.ull.es/Private/folder/institucional/ull/calidad/Cursos%2017_18/Noviembre_Inscripciones.pdf)
 * [Lugar: Sala 2.3 del Centro de Cálculo del Edificio de la ESIT (Informática)](http://cc.etsii.ull.es/node/16)
 
+### Software que usaremos
+
+* [git](https://git-scm.com/)
+* [github](github.com)
+* [Terminal Unix](https://www.tutorialspoint.com/unix_terminal_online.php)
+* [Editor Atom](https://atom.io/)
+* [gitbook](https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md)
+
 ### Campus Virtual 
 
 * [Integración de las herramientas "Github Education" en el aula](https://campusvirtual.ull.es/formacion/course/view.php?id=2622) en el Campus Virtual
