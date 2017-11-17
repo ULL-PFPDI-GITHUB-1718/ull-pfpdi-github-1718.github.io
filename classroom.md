@@ -5,4 +5,5 @@
 
 #### Ejercicio: Crear una Classroom para la Organización {#classroom}
 
-Solicite repositorios privados para la [organización creada en el ejercicio ](organizations.md#organization) anterior
+1. Cree un Classroom para la [organización creada en el ejercicio](organizations.md#organization) anterior
+2. Solicite repositorios privados para la [organización creada en el ejercicio ](organizations.md#organization) anterior
