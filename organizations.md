@@ -5,6 +5,6 @@
 
 #### Ejercicio: Crear una Organización {#organization}
 
-Cree una organización `ULL-...` para una asignatura real que imparte en la ULL. 
-
+1. Cree una organización `ULL-...` para una asignatura real que imparte en la ULL. 
+2. Cree la página web de la organización
 
