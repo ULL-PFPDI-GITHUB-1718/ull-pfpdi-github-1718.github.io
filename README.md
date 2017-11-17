@@ -11,6 +11,7 @@
 
 * [Datos del curso](resources/171817_ficha_convc.pdf)
 * [PFPDI Noviembre 17/18](https://www.ull.es/Private/folder/institucional/ull/calidad/Cursos%2017_18/Noviembre_Inscripciones.pdf)
+* [Lugar: Sala 2.3 del Centro de Cálculo del Edificio de la ESIT (Informática)](http://cc.etsii.ull.es/node/16)
 
 ### Campus Virtual 
 
