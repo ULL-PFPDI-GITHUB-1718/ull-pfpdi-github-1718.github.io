@@ -1,5 +1,6 @@
 * [Presentacion en las Jornadas de Innovación Educativa 2017 de la ULL](resources/github-education-enelaula-jie2017.pdf)
-* [Instrucciones del curso 16/17 para el uso de Classroom](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/instrucciones/classroom.html)
+* [Instrucciones del curso 16/17 para el uso de Classroom](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/instrucciones/classroom.html) en GitBook 
+* [Instrucciones del curso 16/17 para el uso de Classroom](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/instrucciones/classroom.html) en GitBook 
 * [Classroom videos en YouTube](https://www.youtube.com/user/GitHubGuides/search?query=classroom)
 * [ULL-PFPDI-GITHUB-1718 organization](https://github.com/ULL-PFPDI-GITHUB-1718)
 * [ULL-PFPDI-GITHUB-1718  Classroom](https://classroom.github.com/classrooms/33446956-ull-pfpdi-github-1718)
