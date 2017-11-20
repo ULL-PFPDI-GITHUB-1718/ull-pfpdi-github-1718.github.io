@@ -13,7 +13,8 @@ gulp.task('build', shell.task([         // gitbook destroys everything in the _b
 gulp.task('deploy', ['build'], shell.task(
     [ 'git add . ',
       'git ci -am "new version"', // commit changes
-      'git push ghio master' // push changes to github repo
+      'git push ghio master', // push changes to github repo
+      'git push origin master' // push changes to gitbook repo
     ]
   )
 );
@@ -32,6 +33,11 @@ gulp.task("pre-install", shell.task([ // global dependencies
 ]));
 
 gulp.task("push", shell.task([ // push to github not to gitbook
-      'git ci -am "new version" && git push ghio master',
+      'git ci -am "new version" && git push ghio master && git push origin master',
 ]));
+
+gulp.task('gbapuntes', shell.task( // Open web browser in the github deployment of this book
+  'open https://casianorodriguezleon.gitbooks.io/curso-github/content/'
+));
+
 
