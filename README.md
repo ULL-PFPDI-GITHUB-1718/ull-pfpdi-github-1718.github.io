@@ -48,6 +48,7 @@
 #### Apuntes
 * [Apuntes del curso](https://ull-pfpdi-github-1718.github.io/) desplegados en GitHub
 * [Apuntes del curso](https://casianorodriguezleon.gitbooks.io/curso-github/content/) desplegados en GitBook
+* [Presentacion en las Jornadas de Innovación Educativa 2017 de la ULL](resources/github-education-enelaula-jie2017.pdf)
 
 #### Organización
 
@@ -55,7 +56,7 @@
 * [Classroom](https://classroom.github.com/classrooms/33446956-ull-pfpdi-github-1718)
 
 #### Otros recursos
-* [Presentacion en las Jornadas de Innovación Educativa 2017 de la ULL](resources/github-education-enelaula-jie2017.pdf)
 * [GitHub Training & Guides YouTube](https://www.youtube.com/githubguides)
+* [An Intro to Git and GitHub for Beginners (Tutorial) BY MEGHAN NELSON](http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
 * [Udacity Course: How to Use Git and GitHub](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
 * [Google PLus GitHub Education community](https://plus.google.com/u/0/communities/101581119166388524593) mantenida por Casiano
