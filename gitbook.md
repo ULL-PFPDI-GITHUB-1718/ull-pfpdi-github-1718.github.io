@@ -6,7 +6,7 @@
 Cuando se despliega un libro gitbook en las GitHub Pages
 yo suelo hacerlo así:
 
-1. Crear un fichero `nojekyll` para inhibir el uso de `jekyll`
+1. Crear un fichero `.nojekyll` para inhibir el uso de `jekyll`
 ```bash
 ~/GitBook/Library/Import/curso-gihub(master)]$ ls -l .nojekyll 
 -rw-r--r--  1 casiano  staff  0 17 nov 15:02 .nojekyll
