@@ -35,3 +35,4 @@ yo suelo hacerlo así:
 			</body>
 	</html>
   ```
+5. Asegúrese que el directorio `_book`no es ignorado en `.gitignore` 
