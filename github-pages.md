@@ -6,3 +6,4 @@
 * [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 * [Markdown y GitBook](https://casianorodriguezleon.gitbooks.io/elaboracion-de-material-docente-con-gitbook/content/)
   * [Markdown y GitBook](https://ull-pfpdi-gitbook-1617.github.io/Elaboracion-de-Material-Docente-con-GitBook/) En GitHub
+* [El repo de este mismo libro para que le sirva de ejemplo](https://github.com/ULL-PFPDI-GITHUB-1718/ull-pfpdi-github-1718.github.io)
