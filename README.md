@@ -61,3 +61,5 @@
 * [Udacity Course: How to Use Git and GitHub](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
 * [Google PLus GitHub Education community](https://plus.google.com/u/0/communities/101581119166388524593) mantenida por Casiano
 * [Git Cheet Sheets](https://services.github.com/on-demand/resources/cheatsheets/)
+* [Markdown y GitBook](https://casianorodriguezleon.gitbooks.io/elaboracion-de-material-docente-con-gitbook/content/)
+* [Community](https://education.github.community)
