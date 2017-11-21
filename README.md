@@ -14,6 +14,7 @@
 * Compile el libro con `gulp build` para producir el HTML
 * Para desplegar su version en GitHub escriba `gulp deploy`
 * Visite [https://ull-pfpdi-github-1617.github.io/](https://ull-pfpdi-github-1718.github.io/_book/) para ver el resultado
+* Para mas detalles mira la sección [Markdown y GitBook](gitbook.md)
 
 ### Profesorado
 
