@@ -41,3 +41,9 @@ gulp.task('gbapuntes', shell.task( // Open web browser in the github deployment 
 ));
 
 
+gulp.task('serve', shell.task([         // gitbook destroys everything in the _book directory!
+        'gitbook serve',                // build HTML in _book
+      ],
+      { verbose: true }
+  )
+);

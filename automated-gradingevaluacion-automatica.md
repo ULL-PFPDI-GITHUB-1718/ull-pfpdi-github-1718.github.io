@@ -1,4 +1,4 @@
-### Jacob Fiksel (Biostatiscs Johns Hopkins College) Methodology for Grading Assignments
+### [Jacob Fiksel (Biostatiscs Johns Hopkins College) Methodology for Grading Assignments](https://github.com/jfiksel/github-classroom-for-teachers)
 Before I go into the steps on how to do this, I'll mention that this step will probably vary from teacher-to-teacher. If you have a different workflow from us, please feel free to share how you grade assignments from GitHub!
 
 I also want to give the general outline of our grading workflow before I go into the details. The idea is that for each assignment, we will clone all of the students' assignments into our local computer using a shell script. These assignments (which are directories/repositories) will live inside a directory unique to that assignment. So, assignment1 will have an assignment1 directory, and inside of that will be many directories, one for each student's repository. We will then add comments or edit each student's homework assignment locally and save these changes. We then have a shell script that will commit these changes and push each student's repository back to GitHub with a single commit message ("Graded $date $time"). The students can then click on this commit message in their GitHub repository to see a diff and will know what you added.
@@ -67,7 +67,73 @@ class-fall-2017
 
 6. After saving (you have to save!) your changes and/or new files, navigate to the `mass_clone` directory. Type in `./push_all.sh assignment-prefix`. This script will commit all of your changes with the same commit message ("Graded $date $time"), and then push all of the changes back to the students' repositories.
 
+**NOTAS:**
 
+1. I prefer to use [ghedsh](https://github.com/ULL-ESIT-GRADOII-TFG/ghedsh) for the cloning process
+  `gem install ghedsh` (You need to have ruby installed). Here is an example of use:
+	````bash
+	[~/src/curso-gihub(master)]$ ghedsh
+
+	GitHub Education Shell!
+	_______________________
+
+	crguezl> orgs
+
+	etsii2
+	Lenguajes-Paradigmas-Programacion-ULL
+	ULL-ETSII-GRADO-SYTW-1314
+	ULL-ESIT-GRADOII-PL
+	etsiiull
+	dwyl
+	SYTW
+	ULL-ESIT-GRADOII-DSI
+	classroom-testing
+	ULL-ESIT-GRADOII-TFG
+	ULL-ESIT-SYTW-1617
+	ULL-ESIT-DSI-1617
+	ULL-ESIT-PL-1617
+	ULL-ESIT-LPP-1617
+	ULL-PFPDI-GITBOOK-1617
+	ULL-ESIT-TFM-test-evaluation-shell
+	ULL-ESIT-PL
+	ULL-ESIT-MII-CA-1718
+	ULL-ESIT-PL-1718
+	ULL-PFPDI-GITHUB-1718
+	ULL-LSI
+
+	crguezl> cd ULL-LSI
+	crguezl>ULL-LSI> repos
+
+	miembros-del-area-jlroda
+	miembros-del-area-fsande
+	lista-de-comisiones
+	miembros-del-area-esegredo
+	ull-lsi.github.io
+	algoritmos-y-lenguajes-paralelos
+
+	Repositories found: 6
+	crguezl>ULL-LSI> !pwd
+	/Users/casiano/src/curso-gihub
+	crguezl>ULL-LSI> help clone
+		clone			Clone a repository.
+					->	clone [repository]
+
+					You can use a RegExp to clone several repositories with / parameter 
+					->	clone /[RegExp]/
+
+	crguezl>ULL-LSI> clone /miembros-del/
+	Cloning into 'miembros-del-area-jlroda'...
+	warning: You appear to have cloned an empty repository.
+	Cloning into 'miembros-del-area-fsande'...
+	warning: You appear to have cloned an empty repository.
+	Cloning into 'miembros-del-area-esegredo'...
+	warning: You appear to have cloned an empty repository.
+	crguezl>ULL-LSI> exit
+	[~/src/curso-gihub(master)]$ ls -ltrd miembros-del-area-*
+	drwxrwxr-x  3 casiano  staff  96 21 nov 10:19 miembros-del-area-jlroda
+	drwxrwxr-x  3 casiano  staff  96 21 nov 10:19 miembros-del-area-fsande
+	drwxrwxr-x  3 casiano  staff  96 21 nov 10:20 miembros-del-area-esegredo
+	```
 
 ### Referencias
 

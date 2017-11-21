@@ -329,7 +329,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="jacob-fiksel-biostatiscs-johns-hopkins-college-methodology-for-grading-assignments">Jacob Fiksel (Biostatiscs Johns Hopkins College) Methodology for Grading Assignments</h3>
+                                <h3 id="jacob-fiksel-biostatiscs-johns-hopkins-college-methodology-for-grading-assignments"><a href="https://github.com/jfiksel/github-classroom-for-teachers" target="_blank">Jacob Fiksel (Biostatiscs Johns Hopkins College) Methodology for Grading Assignments</a></h3>
 <p>Before I go into the steps on how to do this, I&apos;ll mention that this step will probably vary from teacher-to-teacher. If you have a different workflow from us, please feel free to share how you grade assignments from GitHub!</p>
 <p>I also want to give the general outline of our grading workflow before I go into the details. The idea is that for each assignment, we will clone all of the students&apos; assignments into our local computer using a shell script. These assignments (which are directories/repositories) will live inside a directory unique to that assignment. So, assignment1 will have an assignment1 directory, and inside of that will be many directories, one for each student&apos;s repository. We will then add comments or edit each student&apos;s homework assignment locally and save these changes. We then have a shell script that will commit these changes and push each student&apos;s repository back to GitHub with a single commit message (&quot;Graded $date $time&quot;). The students can then click on this commit message in their GitHub repository to see a diff and will know what you added.</p>
 <p>Here are the steps.</p>
@@ -394,6 +394,74 @@
 <li><p>After saving (you have to save!) your changes and/or new files, navigate to the <code>mass_clone</code> directory. Type in <code>./push_all.sh assignment-prefix</code>. This script will commit all of your changes with the same commit message (&quot;Graded $date $time&quot;), and then push all of the changes back to the students&apos; repositories.</p>
 </li>
 </ol>
+<p><strong>NOTAS:</strong></p>
+<ol>
+<li><p>I prefer to use <a href="https://github.com/ULL-ESIT-GRADOII-TFG/ghedsh" target="_blank">ghedsh</a> for the cloning process
+<code>gem install ghedsh</code> (You need to have ruby installed). Here is an example of use:</p>
+<pre><code class="lang-`bash"> [~/src/curso-gihub(master)]$ ghedsh
+
+ GitHub Education Shell!
+ _______________________
+
+ crguezl&gt; orgs
+
+ etsii2
+ Lenguajes-Paradigmas-Programacion-ULL
+ ULL-ETSII-GRADO-SYTW-1314
+ ULL-ESIT-GRADOII-PL
+ etsiiull
+ dwyl
+ SYTW
+ ULL-ESIT-GRADOII-DSI
+ classroom-testing
+ ULL-ESIT-GRADOII-TFG
+ ULL-ESIT-SYTW-1617
+ ULL-ESIT-DSI-1617
+ ULL-ESIT-PL-1617
+ ULL-ESIT-LPP-1617
+ ULL-PFPDI-GITBOOK-1617
+ ULL-ESIT-TFM-test-evaluation-shell
+ ULL-ESIT-PL
+ ULL-ESIT-MII-CA-1718
+ ULL-ESIT-PL-1718
+ ULL-PFPDI-GITHUB-1718
+ ULL-LSI
+
+ crguezl&gt; cd ULL-LSI
+ crguezl&gt;ULL-LSI&gt; repos
+
+ miembros-del-area-jlroda
+ miembros-del-area-fsande
+ lista-de-comisiones
+ miembros-del-area-esegredo
+ ull-lsi.github.io
+ algoritmos-y-lenguajes-paralelos
+
+ Repositories found: 6
+ crguezl&gt;ULL-LSI&gt; !pwd
+ /Users/casiano/src/curso-gihub
+ crguezl&gt;ULL-LSI&gt; help clone
+     clone            Clone a repository.
+                 -&gt;    clone [repository]
+
+                 You can use a RegExp to clone several repositories with / parameter 
+                 -&gt;    clone /[RegExp]/
+
+ crguezl&gt;ULL-LSI&gt; clone /miembros-del/
+ Cloning into &apos;miembros-del-area-jlroda&apos;...
+ warning: You appear to have cloned an empty repository.
+ Cloning into &apos;miembros-del-area-fsande&apos;...
+ warning: You appear to have cloned an empty repository.
+ Cloning into &apos;miembros-del-area-esegredo&apos;...
+ warning: You appear to have cloned an empty repository.
+ crguezl&gt;ULL-LSI&gt; exit
+ [~/src/curso-gihub(master)]$ ls -ltrd miembros-del-area-*
+ drwxrwxr-x  3 casiano  staff  96 21 nov 10:19 miembros-del-area-jlroda
+ drwxrwxr-x  3 casiano  staff  96 21 nov 10:19 miembros-del-area-fsande
+ drwxrwxr-x  3 casiano  staff  96 21 nov 10:20 miembros-del-area-esegredo
+</code></pre>
+</li>
+</ol>
 <h3 id="referencias">Referencias</h3>
 <ul>
 <li><a href="https://education.github.community/t/how-do-you-use-issues-in-your-class/8361/7" target="_blank">How do you use Issues in your class?</a></li>
@@ -445,7 +513,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Grading/Evaluación","level":"1.9","depth":1,"next":{"title":"Git en la terminal","level":"1.10","depth":1,"path":"git.md","ref":"git.md","articles":[]},"previous":{"title":"Project boards","level":"1.8","depth":1,"path":"projects.md","ref":"projects.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["youtube","copy-code-button"],"pluginsConfig":{"youtube":{},"copy-code-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"automated-gradingevaluacion-automatica.md","mtime":"2017-11-21T10:01:48.748Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-11-21T10:01:54.582Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Grading/Evaluación","level":"1.9","depth":1,"next":{"title":"Git en la terminal","level":"1.10","depth":1,"path":"git.md","ref":"git.md","articles":[]},"previous":{"title":"Project boards","level":"1.8","depth":1,"path":"projects.md","ref":"projects.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["youtube","copy-code-button"],"pluginsConfig":{"youtube":{},"copy-code-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"automated-gradingevaluacion-automatica.md","mtime":"2017-11-21T10:28:26.720Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-11-21T10:28:43.438Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
