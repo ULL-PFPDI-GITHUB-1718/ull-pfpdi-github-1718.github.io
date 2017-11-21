@@ -1,5 +1,9 @@
 # Summary
 
+* [Campus Virtual](https://campusvirtual.ull.es/formacion/course/view.php?id=2622) en el Campus Virtual
+* [ULL-PFPDI-GITHUB-1718](https://github.com/ULL-PFPDI-GITHUB-1718)
+* [Classroom](https://classroom.github.com/classrooms/33446956-ull-pfpdi-github-1718)
+
 * [Introduction](README.md)
 * [Hello GitHub](hello-github.md)
 * [GitHub Pages](github-pages.md)
