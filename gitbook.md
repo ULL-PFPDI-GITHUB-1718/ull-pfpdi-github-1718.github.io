@@ -1,5 +1,6 @@
 * [Apuntes de Markdown y GitBook](https://casianorodriguezleon.gitbooks.io/elaboracion-de-material-docente-con-gitbook/content/) En Gitbook
 * [Apuntes de Markdown y GitBook](https://ull-pfpdi-gitbook-1617.github.io/Elaboracion-de-Material-Docente-con-GitBook/) En GitHub
+* [Repo etsiiull/gitbook-skeleton para comenzar un libro siguiendo la metodología expuesta](https://github.com/etsiiull/gitbook-skeleton)
 
 ### Notas
 
