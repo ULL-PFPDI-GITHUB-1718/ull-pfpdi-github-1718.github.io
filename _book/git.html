@@ -386,7 +386,50 @@
 </li>
 <li><a href="https://services.github.com/on-demand/resources/cheatsheets/" target="_blank">Git Cheet Sheets</a></li>
 </ul>
-
+<h3 id="mi-fichero-de-configuraci&#xF3;n-de-git-gitconfig">Mi Fichero de configuraci&#xF3;n de <code>git</code>: <code>~/.gitconfig</code></h3>
+<pre><code class="lang-bash">[user]
+    email = blahbkah.blah.@gmail.com
+    name = Casiano Blah
+[color]
+    status = auto
+    diff = auto
+[merge]
+    tool = vimdiff
+[<span class="hljs-built_in">alias</span>]
+    lg = <span class="hljs-built_in">log</span> --pretty=format:<span class="hljs-string">&apos;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr %an)%Creset&apos;</span> --abbrev-commit --date=relative
+    wipe = <span class="hljs-string">&quot;!git reset --hard;git clean -fd&quot;</span>
+    co = checkout
+    ci = commit
+  lsb = ls-tree --name-only -r 
+[core]
+    excludesfile = /Users/casiano/.gitignore_global
+[difftool <span class="hljs-string">&quot;sourcetree&quot;</span>]
+    cmd = opendiff \<span class="hljs-string">&quot;<span class="hljs-variable">$LOCAL</span>\&quot; \&quot;<span class="hljs-variable">$REMOTE</span>\&quot;
+    path = 
+[mergetool &quot;</span>sourcetree<span class="hljs-string">&quot;]
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \&quot;<span class="hljs-variable">$LOCAL</span>\&quot; \&quot;<span class="hljs-variable">$REMOTE</span>\&quot; -ancestor \&quot;<span class="hljs-variable">$BASE</span>\&quot; -merge \&quot;<span class="hljs-variable">$MERGED</span>\&quot;
+    trustExitCode = true
+[credential]
+  helper = osxkeychain
+[push]
+    default = simple
+[filter &quot;</span>media<span class="hljs-string">&quot;]
+    clean = git-media-clean %f
+    smudge = git-media-smudge %f
+[filter &quot;</span>lfs<span class="hljs-string">&quot;]
+    clean = git lfs clean %f
+    smudge = git lfs smudge %f
+    required = true
+[hub]
+    protocol = https
+</span></code></pre>
+<h3 id="mi-fichero-gitignoreglobal">Mi fichero <code>~/.gitignore_global</code></h3>
+<pre><code>.DS_Store
+*.swp
+*.swo
+*.tar.gz
+coverage
+</code></pre>
                                 
                                 </section>
                             
@@ -429,7 +472,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Git en la terminal","level":"2.10","depth":1,"next":{"title":"GitHub Desktop","level":"2.11","depth":1,"path":"github-desktop.md","ref":"github-desktop.md","articles":[]},"previous":{"title":"Grading/Evaluación","level":"2.9","depth":1,"path":"automated-gradingevaluacion-automatica.md","ref":"automated-gradingevaluacion-automatica.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["youtube","copy-code-button"],"pluginsConfig":{"youtube":{},"copy-code-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"git.md","mtime":"2017-11-20T11:24:55.658Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-11-21T14:20:43.647Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Git en la terminal","level":"2.10","depth":1,"next":{"title":"GitHub Desktop","level":"2.11","depth":1,"path":"github-desktop.md","ref":"github-desktop.md","articles":[]},"previous":{"title":"Grading/Evaluación","level":"2.9","depth":1,"path":"automated-gradingevaluacion-automatica.md","ref":"automated-gradingevaluacion-automatica.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["youtube","copy-code-button"],"pluginsConfig":{"youtube":{},"copy-code-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"git.md","mtime":"2017-11-21T16:00:10.769Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-11-21T16:00:20.148Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
