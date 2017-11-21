@@ -8,7 +8,7 @@
 * [Request a Disccount](https://education.github.com/discount_requests/new)
 * [Incidencias/issues](issues.md)
 * [Project boards](projects.md)
-* [Automated Grading/Evaluación Automática](automated-gradingevaluacion-automatica.md)
+* [Grading/Evaluación](automated-gradingevaluacion-automatica.md)
 * [Git en la terminal](git.md)
 * [GitHub Desktop](github-desktop.md)
 * [Markdown y GitBook](gitbook.md)

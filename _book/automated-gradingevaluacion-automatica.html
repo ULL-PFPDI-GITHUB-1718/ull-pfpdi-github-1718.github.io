@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Automated Grading/Evaluación Automática · GitBook</title>
+        <title>Grading/Evaluación · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -198,7 +198,7 @@
                 <a href="automated-gradingevaluacion-automatica.html">
             
                     
-                    Automated Grading/Evaluación Automática
+                    Grading/Evaluación
             
                 </a>
             
@@ -314,7 +314,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Automated Grading/Evaluación Automática</a>
+        <a href="." >Grading/Evaluación</a>
     </h1>
 </div>
 
@@ -329,7 +329,74 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <ul>
+                                <h3 id="jacob-fiksel-methodology">Jacob Fiksel Methodology</h3>
+<h3 id="grading-assignments">Grading assignments</h3>
+<p>Before I go into the steps on how to do this, I&apos;ll mention that this step will probably vary from teacher-to-teacher. If you have a different workflow from us, please feel free to share how you grade assignments from GitHub!</p>
+<p>I also want to give the general outline of our grading workflow before I go into the details. The idea is that for each assignment, we will clone all of the students&apos; assignments into our local computer using a shell script. These assignments (which are directories/repositories) will live inside a directory unique to that assignment. So, assignment1 will have an assignment1 directory, and inside of that will be many directories, one for each student&apos;s repository. We will then add comments or edit each student&apos;s homework assignment locally and save these changes. We then have a shell script that will commit these changes and push each student&apos;s repository back to GitHub with a single commit message (&quot;Graded $date $time&quot;). The students can then click on this commit message in their GitHub repository to see a diff and will know what you added.</p>
+<p>Here are the steps.</p>
+<ol>
+<li>Have a directory for the class in your local computer. Inside of this directory, I would recommend making a directory titled something similar to <code>homework-grading</code>. The way we will use this directory is that we have a shell script (more on this in the next step) that will create a sub-directory within the <code>homework-grading</code> named after an assignment prefix. The script then automatically clones all of the students&apos; repos for this assignment into the directory.</li>
+</ol>
+<ol>
+<li>Navigate to the <code>homework-grading</code> directory. The shell scripts we will be using are from <a href="https://github.com/konzy/mass_clone" target="_blank">https://github.com/konzy/mass_clone</a>. You can either clone this repo, or my forked version <a href="https://github.com/jfiksel/mass_clone" target="_blank">https://github.com/jfiksel/mass_clone</a>, into the <code>homework-grading</code> directory. Currently, my forked version allows you to pull changes in from a student&apos;s repository if they have made changes after your initial cloning. At this point, your directory structure should be as follows:</li>
+</ol>
+<pre><code>class-fall-2017
+&#x2502;
+&#x2502;
+&#x2502;
+&#x2514;&#x2500;&#x2500;&#x2500;homework-grading
+    &#x2502;
+    &#x2502;
+    &#x2502;
+    &#x2514;&#x2500;&#x2500;&#x2500;mass_clone
+        &#x2502;   README.me
+        &#x2502;   clone_all.sh
+        |   clone_all_helper_example.sh
+        |   push_all.sh
+</code></pre><ol>
+<li><p>Edit the <code>clone_all_helper_example.sh</code> script so that your class specific organization and your username replaces the default settings in the organization and username fields</p>
+</li>
+<li><p>When you are ready to edit all the assignments, go to the terminal and navigate to the <code>mass_clone</code> repository. Type in <code>./clone_all_helper_example.sh</code>. You can then enter in the assignment prefix when prompted (or just type <code>./clone_all_helper_example.sh assignment-prefix</code>). For example, if we are grading <code>unit-1-homework-1</code>, then I would type in
+<code>./clone_all_helper_example.sh unit-1-homework-1</code>. You will then be prompted to enter your GitHub password. Unfortunately, you will have to enter in the password everytime you do this step, even if you have SSH set up (which you should!). Your directory structure will now look like this</p>
+</li>
+</ol>
+<pre><code>class-fall-2017
+&#x2502;
+&#x2502;
+&#x2502;
+&#x2514;&#x2500;&#x2500;&#x2500;homework-grading
+    &#x2502;
+    &#x2502;
+    &#x2502;
+    |&#x2500;&#x2500;&#x2500;&#x2500;mass_clone
+    |    &#x2502;   README.me
+    |    &#x2502;   clone_all.sh
+    |    |   clone_all_helper_example.sh
+    |    |   push_all.sh
+    |
+    |
+    |
+    |&#x2500;&#x2500;&#x2500;&#x2500;unit-1-homework-1
+         |
+         |
+         |----unit-1-homework-1-student1
+         |
+         |
+         |----unit-1-homework-1-student2
+         |
+                  .
+                  .
+                  .
+         |
+         |----unit-1-homework-1-studentN
+</code></pre><ol>
+<li><p>You can either edit all the assignments by typing comments into their documents, or by adding a new file with comments to each student&apos;s repository. If there is only one document that students will be editing, then it&apos;s possible to open up each student&apos;s document, put in your changes, and then save. This is also nice because you can use regular expressions to open up every student&apos;s assignment without you clicking. For example, if the document is called homework1.Rmd, and you are inside of the unit-1-homework-1 directory, you can type <code>open */homework1.Rmd</code> (you can replace open with whatever command you want so that the files open in your preferred editor). You can then work through each student&apos;s assignment, saving and then closing their assignment after you are done grading. You may or may not want to put official assignment grade into your comments due to privacy issues.</p>
+</li>
+<li><p>After saving (you have to save!) your changes and/or new files, navigate to the <code>mass_clone</code> directory. Type in <code>./push_all.sh assignment-prefix</code>. This script will commit all of your changes with the same commit message (&quot;Graded $date $time&quot;), and then push all of the changes back to the students&apos; repositories.</p>
+</li>
+</ol>
+<h3 id="referencias">Referencias</h3>
+<ul>
 <li><a href="https://education.github.community/t/how-do-you-use-issues-in-your-class/8361/7" target="_blank">How do you use Issues in your class?</a></li>
 <li><a href="https://education.github.community/t/student-feedback-templates/18767" target="_blank">Student feedback templates</a></li>
 <li><a href="https://education.github.community/search?q=grading" target="_blank">Grading posts at GitHub Education</a></li>
@@ -379,7 +446,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Automated Grading/Evaluación Automática","level":"1.9","depth":1,"next":{"title":"Git en la terminal","level":"1.10","depth":1,"path":"git.md","ref":"git.md","articles":[]},"previous":{"title":"Project boards","level":"1.8","depth":1,"path":"projects.md","ref":"projects.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["youtube","copy-code-button"],"pluginsConfig":{"youtube":{},"copy-code-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"automated-gradingevaluacion-automatica.md","mtime":"2017-11-20T12:38:17.556Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-11-21T08:52:16.625Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Grading/Evaluación","level":"1.9","depth":1,"next":{"title":"Git en la terminal","level":"1.10","depth":1,"path":"git.md","ref":"git.md","articles":[]},"previous":{"title":"Project boards","level":"1.8","depth":1,"path":"projects.md","ref":"projects.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["youtube","copy-code-button"],"pluginsConfig":{"youtube":{},"copy-code-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"automated-gradingevaluacion-automatica.md","mtime":"2017-11-21T09:59:27.228Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-11-21T09:59:35.835Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

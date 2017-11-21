@@ -3,12 +3,12 @@
 
 ### Instrucciones de Profesores a sus Alumnos sobre como usar Classroom
 
+* Jacob Fiksel (Biostatiscs Johns Hopkins College)
+  - [GitHub Classroom Guide for Teachers](https://github.com/jfiksel/github-classroom-for-teachers)
+  - [GitHub Classroom Guide for Students](https://github.com/jfiksel/github-classroom-for-students)
 * Nuestras instruccciones
   * [Instrucciones del curso 16/17 para el uso de Classroom](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/instrucciones/classroom.html) en GitBook 
   * [Instrucciones del curso 16/17 para el uso de Classroom](https://crguezl.github.io/ull-esit-1617/instrucciones/classroom.html) en GitHub 
-* Jacob Fiksel (Biostatiscs)
-  - [GitHub Classroom Guide for Teachers](https://github.com/jfiksel/github-classroom-for-teachers)
-  - [GitHub Classroom Guide for Students](https://github.com/jfiksel/github-classroom-for-students)
 * [Harvard: CS 161: Operating Systems (Spring 2017). Using Github Classroom](http://www.eecs.harvard.edu/~cs161/resources/githubclassroom.html)
 * [Miguel Paz. CUNY. "Data Journalism": Using Github Classroom to set up your Team Story Assignments Repository](https://github.com/datajournalists/djspring17/blob/master/settingupteamrepos_githubclassroom.md)
 
