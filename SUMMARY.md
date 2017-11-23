@@ -21,5 +21,5 @@
 * [GitHub Desktop](github-desktop.md)
 * [Markdown y GitBook](gitbook.md)
 * [Team discussions](discussions.md)
-* [Community](https://education.github.community)
+* [GH Education Community](https://education.github.community)
 * [Sala 2.3](sala-2-3.md)

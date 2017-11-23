@@ -69,7 +69,7 @@ class-fall-2017
 
 **NOTAS:**
 
-1. I prefer to use [ghedsh](https://github.com/ULL-ESIT-GRADOII-TFG/ghedsh) for the cloning process
+1. There are diffferent ways to clone the students repositories. I prefer to use [ghedsh](https://github.com/ULL-ESIT-GRADOII-TFG/ghedsh) for the cloning process
   `gem install ghedsh` (You need to have ruby installed). Here is an example of use:
 	````bash
 	[~/src/curso-gihub(master)]$ ghedsh
@@ -133,7 +133,7 @@ class-fall-2017
 	drwxrwxr-x  3 casiano  staff  96 21 nov 10:19 miembros-del-area-jlroda
 	drwxrwxr-x  3 casiano  staff  96 21 nov 10:19 miembros-del-area-fsande
 	drwxrwxr-x  3 casiano  staff  96 21 nov 10:20 miembros-del-area-esegredo
-	```
+```
 
 ### Referencias
 
