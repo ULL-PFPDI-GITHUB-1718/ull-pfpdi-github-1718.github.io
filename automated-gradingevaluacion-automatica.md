@@ -135,6 +135,11 @@ class-fall-2017
 	drwxrwxr-x  3 casiano  staff  96 21 nov 10:20 miembros-del-area-esegredo
 ```
 
+#### Herramientas que pueden ayudar en el proceso de Evaluación
+
+
+* [gitomator](https://gitomator.github.io/docs/welcome/)
+
 #### Massive cloning with `git submodule`
 
 This is yet another way to cope with the massive cloning-pulling-pushing process.

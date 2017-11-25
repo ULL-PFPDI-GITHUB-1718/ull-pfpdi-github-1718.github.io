@@ -19,6 +19,7 @@
 * [Incidencias/issues](issues.md)
 * [Project boards](projects.md)
 * [Grading/Evaluación](automated-gradingevaluacion-automatica.md)
+  - [gitomator](https://github.com/gitomator)
 * [Git en la terminal](git.md)
 * [GitHub Desktop](github-desktop.md)
 * [Markdown y GitBook](gitbook.md)
