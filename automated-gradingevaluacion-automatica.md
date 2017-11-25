@@ -137,8 +137,12 @@ class-fall-2017
 
 #### Herramientas que pueden ayudar en el proceso de Evaluación
 
+##### Gitomator
 
-* [gitomator](https://gitomator.github.io/docs/welcome/)
+* [Organizationpage](https://github.com/gitomator)
+* [GitHub page](https://gitomator.github.io/)
+* [gitomator docs: welcome](https://gitomator.github.io/docs/welcome/)
+* [Gitomator Classroom](https://github.com/gitomator/gitomator-classroom)
 
 #### Massive cloning with `git submodule`
 
