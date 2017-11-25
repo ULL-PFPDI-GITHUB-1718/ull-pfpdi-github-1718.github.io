@@ -67,7 +67,10 @@ class-fall-2017
 
 6. After saving (you have to save!) your changes and/or new files, navigate to the `mass_clone` directory. Type in `./push_all.sh assignment-prefix`. This script will commit all of your changes with the same commit message ("Graded $date $time"), and then push all of the changes back to the students' repositories.
 
-#### Massive cloning with ghedsh
+
+#### Herramientas que pueden ayudar en el proceso de Evaluación
+
+#### ghedsh
 
 1. There are different ways to clone the students repositories. I prefer to use [ghedsh](https://github.com/ULL-ESIT-GRADOII-TFG/ghedsh) for the cloning process
   `gem install ghedsh` (You need to have ruby installed). Here is an example of use:
@@ -134,8 +137,6 @@ class-fall-2017
 	drwxrwxr-x  3 casiano  staff  96 21 nov 10:19 miembros-del-area-fsande
 	drwxrwxr-x  3 casiano  staff  96 21 nov 10:20 miembros-del-area-esegredo
 ```
-
-#### Herramientas que pueden ayudar en el proceso de Evaluación
 
 ##### Gitomator
 
