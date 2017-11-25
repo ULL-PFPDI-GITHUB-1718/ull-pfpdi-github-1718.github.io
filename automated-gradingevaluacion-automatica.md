@@ -145,6 +145,17 @@ class-fall-2017
 * [gitomator docs: welcome](https://gitomator.github.io/docs/welcome/)
 * [Gitomator Classroom](https://github.com/gitomator/gitomator-classroom)
 
+##### classwerk
+
+The classwerk project is a set of scripts to help facilitate using Github as an assignment management platform.
+
+* [keshavdv/classwerk]https://github.com/keshavdv/classwerk)
+
+#### Classroom desktop
+
+* [education/classroom-desktop](https://github.com/education/classroom-desktop)
+ Uses electron
+
 #### Massive cloning with `git submodule`
 
 This is yet another way to cope with the massive cloning-pulling-pushing process.
