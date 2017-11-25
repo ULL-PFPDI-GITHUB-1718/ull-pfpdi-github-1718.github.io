@@ -67,9 +67,9 @@ class-fall-2017
 
 6. After saving (you have to save!) your changes and/or new files, navigate to the `mass_clone` directory. Type in `./push_all.sh assignment-prefix`. This script will commit all of your changes with the same commit message ("Graded $date $time"), and then push all of the changes back to the students' repositories.
 
-**NOTAS:**
+#### Massive cloning with ghedsh
 
-1. There are diffferent ways to clone the students repositories. I prefer to use [ghedsh](https://github.com/ULL-ESIT-GRADOII-TFG/ghedsh) for the cloning process
+1. There are different ways to clone the students repositories. I prefer to use [ghedsh](https://github.com/ULL-ESIT-GRADOII-TFG/ghedsh) for the cloning process
   `gem install ghedsh` (You need to have ruby installed). Here is an example of use:
 	````bash
 	[~/src/curso-gihub(master)]$ ghedsh
@@ -134,6 +134,49 @@ class-fall-2017
 	drwxrwxr-x  3 casiano  staff  96 21 nov 10:19 miembros-del-area-fsande
 	drwxrwxr-x  3 casiano  staff  96 21 nov 10:20 miembros-del-area-esegredo
 ```
+
+#### Massive cloning with `git submodule`
+
+This is yet another way to cope with the massive cloning-pulling-pushing process.
+
+The idea is:
+
+1. Create a repo `eval-assignment-name`
+2. Add as submodules all the student repos using the [git submodule](https://git-scm.com/docs/git-submodule) command
+  ```bash
+  [~/src/githubclassroom/submodules]$ ls -l eval-cuentame-un-cuento/
+  total 0
+  drwxr-xr-x  7 casiano  staff  224 22 nov 12:27 cuentame-un-cuento-MarysePrivat
+  drwxr-xr-x  7 casiano  staff  224 22 nov 12:23 cuentame-un-cuento-cpgonzal
+  drwxr-xr-x  7 casiano  staff  224 22 nov 12:27 cuentame-un-cuento-fernandostrut
+  drwxr-xr-x  7 casiano  staff  224 23 nov 08:25 cuentame-un-cuento-josestevez
+  ```
+3. Open with your favourite editor all the students works and review them modify what is necessary.
+  Mine is `vi`. The following command opens in the editor a tab per student:
+  ```bash
+  [~/local/src/githubclassroom/submodules/eval-cuentame-un-cuento(master)]$ vi -p cuentame-un-cuento-*/
+  ```
+4. Use the command [git submodule foreach shell-script](https://git-scm.com/docs/git-submodule) para hacer un push masivo a los repos de los cambios realizados:
+   The command `submodule for each shell-script` evaluates an
+   arbitrary shell command in each checked out submodule. 
+
+   The command has access to the variables `$name`, `$path`, `$sha1` and `$toplevel`:
+   `$name` is the name of the relevant submodule section in `.gitmodules`,
+   $path is the name of the submodule directory relative to the
+   superproject, $sha1 is the commit as recorded in the superproject,
+   and $toplevel is the absolute path to the top-level of the
+   superproject. Any submodules defined in the superproject but not
+   checked out are ignored by this command. Unless given --quiet,
+   foreach prints the name of each submodule before evaluating the
+   command. If --recursive is given, submodules are traversed
+   recursively (i.e. the given shell command is evaluated in nested
+   submodules as well). A non-zero return from the command in any
+   submodule causes the processing to terminate. This can be
+   overridden by adding || : to the end of the command.
+
+As an example, the command below will show the path and currently checked out commit for each submodule:
+
+git submodule foreach 'echo $path `git rev-parse HEAD`'   
 
 ### Referencias
 

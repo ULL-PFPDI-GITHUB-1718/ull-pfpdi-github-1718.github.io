@@ -5,6 +5,8 @@
 * [Campus Virtual](https://campusvirtual.ull.es/formacion/course/view.php?id=2622) en el Campus Virtual
 * [Organization ULL-PFPDI-GITHUB-1718](https://github.com/ULL-PFPDI-GITHUB-1718)
 * [Classroom ULL-PFPDI-GITHUB-1718](https://classroom.github.com/classrooms/33446956-ull-pfpdi-github-1718)
+* [GH Education Community](https://education.github.community)
+* [Sala 2.3](sala-2-3.md)
 
 ## INDICE
 
@@ -21,5 +23,3 @@
 * [GitHub Desktop](github-desktop.md)
 * [Markdown y GitBook](gitbook.md)
 * [Team discussions](discussions.md)
-* [GH Education Community](https://education.github.community)
-* [Sala 2.3](sala-2-3.md)

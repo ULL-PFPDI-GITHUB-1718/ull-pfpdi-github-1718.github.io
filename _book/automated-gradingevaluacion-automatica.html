@@ -130,6 +130,32 @@
             
         </li>
     
+        <li class="chapter " data-level="1.4" >
+            
+                <a target="_blank" href="https://education.github.community">
+            
+                    
+                    GH Education Community
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="sala-2-3.html">
+            
+                <a href="sala-2-3.html">
+            
+                    
+                    Sala 2.3
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -306,32 +332,6 @@
             
         </li>
     
-        <li class="chapter " data-level="2.14" >
-            
-                <a target="_blank" href="https://education.github.community">
-            
-                    
-                    GH Education Community
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.15" data-path="sala-2-3.html">
-            
-                <a href="sala-2-3.html">
-            
-                    
-                    Sala 2.3
-            
-                </a>
-            
-
-            
-        </li>
-    
 
     
 
@@ -442,9 +442,9 @@
 <li><p>After saving (you have to save!) your changes and/or new files, navigate to the <code>mass_clone</code> directory. Type in <code>./push_all.sh assignment-prefix</code>. This script will commit all of your changes with the same commit message (&quot;Graded $date $time&quot;), and then push all of the changes back to the students&apos; repositories.</p>
 </li>
 </ol>
-<p><strong>NOTAS:</strong></p>
+<h4 id="massive-cloning-with-ghedsh">Massive cloning with ghedsh</h4>
 <ol>
-<li><p>There are diffferent ways to clone the students repositories. I prefer to use <a href="https://github.com/ULL-ESIT-GRADOII-TFG/ghedsh" target="_blank">ghedsh</a> for the cloning process
+<li><p>There are different ways to clone the students repositories. I prefer to use <a href="https://github.com/ULL-ESIT-GRADOII-TFG/ghedsh" target="_blank">ghedsh</a> for the cloning process
 <code>gem install ghedsh</code> (You need to have ruby installed). Here is an example of use:</p>
 <pre><code class="lang-`bash"> [~/src/curso-gihub(master)]$ ghedsh
 
@@ -510,6 +510,43 @@
 </code></pre>
 </li>
 </ol>
+<h4 id="massive-cloning-with-git-submodule">Massive cloning with <code>git submodule</code></h4>
+<p>This is yet another way to cope with the massive cloning-pulling-pushing process.</p>
+<p>The idea is:</p>
+<ol>
+<li>Create a repo <code>eval-assignment-name</code></li>
+<li>Add as submodules all the student repos using the <a href="https://git-scm.com/docs/git-submodule" target="_blank">git submodule</a> command<pre><code class="lang-bash">[~/src/githubclassroom/submodules]$ ls <span class="hljs-_">-l</span> <span class="hljs-built_in">eval</span>-cuentame-un-cuento/
+total 0
+drwxr-xr-x  7 casiano  staff  224 22 nov 12:27 cuentame-un-cuento-MarysePrivat
+drwxr-xr-x  7 casiano  staff  224 22 nov 12:23 cuentame-un-cuento-cpgonzal
+drwxr-xr-x  7 casiano  staff  224 22 nov 12:27 cuentame-un-cuento-fernandostrut
+drwxr-xr-x  7 casiano  staff  224 23 nov 08:25 cuentame-un-cuento-josestevez
+</code></pre>
+</li>
+<li>Open with your favourite editor all the students works and review them modify what is necessary.
+Mine is <code>vi</code>. The following command opens in the editor a tab per student:<pre><code class="lang-bash">[~/<span class="hljs-built_in">local</span>/src/githubclassroom/submodules/<span class="hljs-built_in">eval</span>-cuentame-un-cuento(master)]$ vi -p cuentame-un-cuento-*/
+</code></pre>
+</li>
+<li><p>Use the command <a href="https://git-scm.com/docs/git-submodule" target="_blank">git submodule foreach shell-script</a> para hacer un push masivo a los repos de los cambios realizados:
+The command <code>submodule for each shell-script</code> evaluates an
+arbitrary shell command in each checked out submodule. </p>
+<p>The command has access to the variables <code>$name</code>, <code>$path</code>, <code>$sha1</code> and <code>$toplevel</code>:
+<code>$name</code> is the name of the relevant submodule section in <code>.gitmodules</code>,
+$path is the name of the submodule directory relative to the
+superproject, $sha1 is the commit as recorded in the superproject,
+and $toplevel is the absolute path to the top-level of the
+superproject. Any submodules defined in the superproject but not
+checked out are ignored by this command. Unless given --quiet,
+foreach prints the name of each submodule before evaluating the
+command. If --recursive is given, submodules are traversed
+recursively (i.e. the given shell command is evaluated in nested
+submodules as well). A non-zero return from the command in any
+submodule causes the processing to terminate. This can be
+overridden by adding || : to the end of the command.</p>
+</li>
+</ol>
+<p>As an example, the command below will show the path and currently checked out commit for each submodule:</p>
+<p>git submodule foreach &apos;echo $path <code>git rev-parse HEAD</code>&apos;   </p>
 <h3 id="referencias">Referencias</h3>
 <ul>
 <li><a href="https://education.github.community/t/how-do-you-use-issues-in-your-class/8361/7" target="_blank">How do you use Issues in your class?</a></li>
@@ -561,7 +598,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Grading/Evaluación","level":"2.9","depth":1,"next":{"title":"Git en la terminal","level":"2.10","depth":1,"path":"git.md","ref":"git.md","articles":[]},"previous":{"title":"Project boards","level":"2.8","depth":1,"path":"projects.md","ref":"projects.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["youtube","copy-code-button"],"pluginsConfig":{"youtube":{},"copy-code-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"automated-gradingevaluacion-automatica.md","mtime":"2017-11-23T08:20:32.938Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-11-23T08:21:30.114Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Grading/Evaluación","level":"2.9","depth":1,"next":{"title":"Git en la terminal","level":"2.10","depth":1,"path":"git.md","ref":"git.md","articles":[]},"previous":{"title":"Project boards","level":"2.8","depth":1,"path":"projects.md","ref":"projects.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["youtube","copy-code-button"],"pluginsConfig":{"youtube":{},"copy-code-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"automated-gradingevaluacion-automatica.md","mtime":"2017-11-23T09:43:17.652Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-11-25T05:23:53.282Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
