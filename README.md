@@ -50,6 +50,7 @@
 * [Apuntes del curso](https://ull-pfpdi-github-1718.github.io/) desplegados en GitHub
 * [Apuntes del curso](https://casianorodriguezleon.gitbooks.io/curso-github/content/) desplegados en GitBook
 * [Presentacion en las Jornadas de Innovación Educativa 2017 de la ULL](resources/github-education-enelaula-jie2017.pdf)
+* [Artículo: Integración de las herramientas de “Github Education” en el aula](resources/Leon_Hernandez.pdf)
 
 #### Organización
 
