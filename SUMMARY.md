@@ -7,6 +7,8 @@
 * [Classroom ULL-PFPDI-GITHUB-1718](https://classroom.github.com/classrooms/33446956-ull-pfpdi-github-1718)
 * [GH Education Community](https://education.github.community)
 * [Sala 2.3](sala-2-3.md)
+* [Presentacion en las Jornadas de Innovación Educativa 2017 de la ULL](https://ull-pfpdi-github-1718.github.io/_book/resources/github-education-enelaula-jie2017.pdf)
+* [Artículo: Integración de las herramientas de *Github Education* en el aula](https://ull-pfpdi-github-1718.github.io/_book/resources/Leon_Hernandez.pdf)
 
 ## INDICE
 
