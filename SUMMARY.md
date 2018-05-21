@@ -9,6 +9,7 @@
 * [Sala 2.3](sala-2-3.md)
 * [Presentacion en las Jornadas de Innovación Educativa 2017 de la ULL](https://ull-pfpdi-github-1718.github.io/_book/resources/github-education-enelaula-jie2017.pdf)
 * [Artículo: Integración de las herramientas de *Github Education* en el aula](https://ull-pfpdi-github-1718.github.io/_book/resources/Leon_Hernandez.pdf)
+* [Poster sobre GH Education](resources/poster-github-edu-and-ghedsh-codelab.pdf) PDF
 
 ## INDICE
 
