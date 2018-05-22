@@ -38,6 +38,7 @@
 * [Apuntes del curso](https://casianorodriguezleon.gitbooks.io/curso-github/content/) desplegados en GitBook
 * [Presentacion en las Jornadas de Innovación Educativa 2017 de la ULL](https://github.com/ULL-PFPDI-GITHUB-1718/ull-pfpdi-github-1718.github.io/blob/master/resources/github-education-enelaula-jie2017.pdf)
 * [Artículo: Integración de las herramientas de *Github Education* en el aula](https://github.com/ULL-PFPDI-GITHUB-1718/ull-pfpdi-github-1718.github.io/blob/master/resources/Leon_Hernandez.pdf)
+* [Poster sobre GH Education](https://ull-pfpdi-github-1718.github.io/_book/resources/poster-github-edu-and-ghedsh-codelab.pdf) PDF 2018
 
 #### Organización
 
