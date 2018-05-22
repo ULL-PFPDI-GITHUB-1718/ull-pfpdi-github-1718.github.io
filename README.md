@@ -47,6 +47,8 @@
 ### References
 
 #### Apuntes
+
+* [Introduction to Control Version](https://homes.cs.washington.edu/~mernst/advice/version-control.html#Introduction_to_version_control)
 * [Apuntes del curso](https://ull-pfpdi-github-1718.github.io/) desplegados en GitHub
 * [Apuntes del curso](https://casianorodriguezleon.gitbooks.io/curso-github/content/) desplegados en GitBook
 * [Presentacion en las Jornadas de Innovación Educativa 2017 de la ULL](resources/github-education-enelaula-jie2017.pdf)

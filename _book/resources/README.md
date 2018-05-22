@@ -1,7 +1,3 @@
-### Introduction
-
-* [Introduction to Control Version](https://homes.cs.washington.edu/~mernst/advice/version-control.html#Introduction_to_version_control)
-
 ###  PDFs
 
 * [Ficha del curso](171817_ficha_convc.pdf)
