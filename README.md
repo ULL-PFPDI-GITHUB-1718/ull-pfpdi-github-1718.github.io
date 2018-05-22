@@ -1,21 +1,5 @@
 # Integración de las herramientas "Github Education" en el aula. 
 
-### Instrucciones para los autores
-
-* El libro está alojado en el repo [https://github.com/ULL-PFPDI-GITHUB-1718/ull-pfpdi-github-1718.github.io](https://github.com/ULL-PFPDI-GITHUB-1718/ull-pfpdi-github-1718.github.io)
-* Instale [git](https://git-scm.com/)
-* Clone el libro en su máquina: `git clone https://github.com/ULL-PFPDI-GITHUB-1718/ull-pfpdi-github-1718.github.io.git` 
-* Instale [NodeJS](https://nodejs.org/es/)
-* Instale [gitbook](https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md) en su ordenador
-* Instale [gulp](https://gulpjs.com/) globalmente: `npm i -g gulp`
-* Instale las dependencias de este libro/proyecto `npm i`
-* [Hágase miembro de GitHub](https://github.com/join?source=header-home)
-* Escriba en [markdown](https://es.wikipedia.org/wiki/Markdown)  los textos que desee
-* Compile el libro con `gulp build` para producir el HTML
-* Para desplegar su version en GitHub escriba `gulp deploy`
-* Visite [https://ull-pfpdi-github-1617.github.io/](https://ull-pfpdi-github-1718.github.io/_book/) para ver el resultado
-* Para mas detalles mira la sección [Markdown y GitBook](gitbook.md)
-
 ### Profesorado
 
 * [Casiano](https://crguezl.github.io/_book/) 
@@ -28,6 +12,7 @@
 * [Datos del curso](resources/171817_ficha_convc.pdf)
 * [PFPDI Noviembre 17/18](https://www.ull.es/Private/folder/institucional/ull/calidad/Cursos%2017_18/Noviembre_Inscripciones.pdf)
 * [Lugar: Sala 2.3 del Centro de Cálculo del Edificio de la ESIT (Informática)](http://cc.etsii.ull.es/node/16)
+* [23 de Mayo 2018. Lugar: Aula de Informática de Ciencias de la Información (la Pirámide)](https://www.ull.es/centros/facultad-de-ciencias-politicas-sociales-y-de-la-comunicacion/informacion-general/infraestructuras-y-servicios/)
 
 ### Software que usaremos
 
@@ -66,3 +51,20 @@
 * [Google PLus GitHub Education community](https://plus.google.com/u/0/communities/101581119166388524593) mantenida por Casiano
 * [Git Cheet Sheets](https://services.github.com/on-demand/resources/cheatsheets/)
 * [Community](https://education.github.community)
+
+### Instrucciones para los autores
+
+* El libro está alojado en el repo [https://github.com/ULL-PFPDI-GITHUB-1718/ull-pfpdi-github-1718.github.io](https://github.com/ULL-PFPDI-GITHUB-1718/ull-pfpdi-github-1718.github.io)
+* Instale [git](https://git-scm.com/)
+* Clone el libro en su máquina: `git clone https://github.com/ULL-PFPDI-GITHUB-1718/ull-pfpdi-github-1718.github.io.git` 
+* Instale [NodeJS](https://nodejs.org/es/)
+* Instale [gitbook](https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md) en su ordenador
+* Instale [gulp](https://gulpjs.com/) globalmente: `npm i -g gulp`
+* Instale las dependencias de este libro/proyecto `npm i`
+* [Hágase miembro de GitHub](https://github.com/join?source=header-home)
+* Escriba en [markdown](https://es.wikipedia.org/wiki/Markdown)  los textos que desee
+* Compile el libro con `gulp build` para producir el HTML
+* Para desplegar su version en GitHub escriba `gulp deploy`
+* Visite [https://ull-pfpdi-github-1617.github.io/](https://ull-pfpdi-github-1718.github.io/_book/) para ver el resultado
+* Para mas detalles mira la sección [Markdown y GitBook](gitbook.md)
+
