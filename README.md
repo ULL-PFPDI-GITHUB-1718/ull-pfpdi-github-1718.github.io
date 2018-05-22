@@ -52,7 +52,7 @@
 * [Git Cheet Sheets](https://services.github.com/on-demand/resources/cheatsheets/)
 * [Community](https://education.github.community)
 
-### Instrucciones para los autores
+### Instrucciones para los autores de este libro
 
 * El libro está alojado en el repo [https://github.com/ULL-PFPDI-GITHUB-1718/ull-pfpdi-github-1718.github.io](https://github.com/ULL-PFPDI-GITHUB-1718/ull-pfpdi-github-1718.github.io)
 * Instale [git](https://git-scm.com/)
