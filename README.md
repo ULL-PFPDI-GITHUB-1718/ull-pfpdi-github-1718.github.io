@@ -16,8 +16,8 @@
 
 ### Software que usaremos
 
-* [git](https://git-scm.com/)
 * [github](github.com)
+* [git](https://git-scm.com/)
 * [Terminal Unix](https://www.tutorialspoint.com/unix_terminal_online.php)
 * [hub](https://github.com/github/hub)
 * [Editor Atom](https://atom.io/)
