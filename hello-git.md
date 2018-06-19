@@ -9,4 +9,8 @@
 4. En este vídeo YouTube que sigue se enseña como hacer comits para guardar nuestro proyecto [Commit. GitHub & Git Foundations](https://youtu.be/A-Cll9jEnnM)
 4. En este vídeo YouTube que sigue se enseña como hacer ver los cambios producidos entre distintas versiones utilizando `diff` [Diff. GitHub & Git Foundations](https://youtu.be/RXSriVcoI70)
 4. En este vídeo YouTube que sigue se enseña como hacer ver la historia de nuestros commits usando `log` [Log. GitHub & Git Foundations](https://youtu.be/Ew8HQsFyVHo)
+4. En este vídeo YouTube que sigue se enseña como borrar usando `rm` [Remove. GitHub & Git Foundations](https://youtu.be/jtuHOIlfS2Q)
+4. En este vídeo YouTube que sigue se enseña como mover [Move. GitHub & Git Foundations](https://youtu.be/ipdgyfPq8FE)
+4. En este vídeo YouTube que sigue se enseña como usar `.gitignore` [Ignore. GitHub & Git Foundations](https://youtu.be/4VBG9FlyiOw)
+4. En este vídeo YouTube que sigue se enseña como crear ramas [Brach. GitHub & Git Foundations](https://youtu.be/H5GJfcp3p4Q)
 
