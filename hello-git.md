@@ -12,5 +12,7 @@
 4. En este vídeo YouTube que sigue se enseña como borrar usando `rm` [Remove. GitHub & Git Foundations](https://youtu.be/jtuHOIlfS2Q)
 4. En este vídeo YouTube que sigue se enseña como mover [Move. GitHub & Git Foundations](https://youtu.be/ipdgyfPq8FE)
 4. En este vídeo YouTube que sigue se enseña como usar `.gitignore` [Ignore. GitHub & Git Foundations](https://youtu.be/4VBG9FlyiOw)
-4. En este vídeo YouTube que sigue se enseña como crear ramas [Brach. GitHub & Git Foundations](https://youtu.be/H5GJfcp3p4Q)
+4. En este vídeo YouTube que sigue se enseña como crear ramas [Branch. GitHub & Git Foundations](https://youtu.be/H5GJfcp3p4Q)
+4. En este vídeo YouTube que sigue se enseña como cambiar entre ramas [Checkout. GitHub & Git Foundations](https://youtu.be/HwrPhOp6-aM)
+4. En este vídeo YouTube que sigue se enseña como mezclar el trabajo  entre diferentes ramas [Merge. GitHub & Git Foundations](https://youtu.be/yyLiplDQtf0)
 
