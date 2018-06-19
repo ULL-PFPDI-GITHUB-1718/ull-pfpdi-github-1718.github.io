@@ -1,5 +1,7 @@
 # Hello GitHub
 
+* Comienza leyendo [Version control concepts and best practices: Introduction to version control](https://homes.cs.washington.edu/~mernst/advice/version-control.html#Introduction_to_version_control) de [Michael Ernst](https://homes.cs.washington.edu/~mernst/)
+    - Lee solo la introducción, solo si te sientes experto lee el resto de las secciones 
 * [Join gitHub](https://github.com/join)
 * [GitHub Hello World Guide](https://guides.github.com/activities/hello-world/)
 * [GitHub Guides](https://guides.github.com/)

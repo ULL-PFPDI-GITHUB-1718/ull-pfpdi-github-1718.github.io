@@ -13,7 +13,7 @@
 
 ## INDICE
 
-* [Introduction](README.md)
+* [Sobre el curso](README.md)
 * [Hello GitHub](hello-github.md)
 * [GitHub Pages](github-pages.md)
 * [Organizations](organizations.md)
