@@ -1,11 +1,13 @@
 # Hello GitHub
 
 1. Comienza leyendo [Version control concepts and best practices: Introduction to version control](https://homes.cs.washington.edu/~mernst/advice/version-control.html#Introduction_to_version_control) de [Michael Ernst](https://homes.cs.washington.edu/~mernst/)
-    - Lee solo la introducción, solo si te sientes experto lee el resto de las secciones del artículo
+    - **Lee solo la introducción**, solo si te sientes experto lee el resto de las secciones del artículo
 2. Registrate en GitHub si  no lo has hecho ya: [Join gitHub](https://github.com/join) 
 3. Realiza este tutorial introductorio: [GitHub Hello World Guide](https://guides.github.com/activities/hello-world/)
 4. Para aprender un poco de git sigue este tutorial [Git Handbook](https://guides.github.com/introduction/git-handbook/)
-5. Lee sólo la sección **ANTECEDENTES: MARCO TECNOLÓGICO** del artículo [*De Moodle a Git: Experiencia con el uso de un sistema de control de versiones (SCV) para reemplazar a un sistema de administración de la enseñanza (LMS)*](https://campusvirtual.ull.es/ocw/pluginfile.php/15275/mod_folder/content/0/de-moodle-a-git/experiencias_git.pdf?forcedownload=1) (Artículo en PDF)
+5. Lee sólo la sección **ANTECEDENTES: MARCO TECNOLÓGICO** del artículo [*De Moodle a Git: Experiencia con el uso de un sistema de control de versiones (SCV) para reemplazar a un sistema de administración de la enseñanza (LMS)*](https://campusvirtual.ull.es/ocw/pluginfile.php/15275/mod_folder/content/0/de-moodle-a-git/experiencias_git.pdf?forcedownload=1) (Artículo en PDF). 
+6. Estudia este vídeo YouTube de la gente de GitHub [Introduction. GitHub & Git Foundations](https://youtu.be/FyfwLX4HAxM)
+7. En el vídeo YouTube que sigue se enseña como instalar y configurar git en tu máquina [Setup. GitHub & Git Foundations](https://youtu.be/7Inc0G0wutk)
 
 ## Notas
 
