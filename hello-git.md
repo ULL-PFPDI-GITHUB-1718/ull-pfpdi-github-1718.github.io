@@ -7,5 +7,6 @@
 4. En este vídeo YouTube que sigue se enseña como configurar git en tu máquina [Config. GitHub & Git Foundations](https://youtu.be/ZChtKFLiaNw)
 4. En este vídeo YouTube que sigue se enseña como inicializar un repositorio git en tu máquina y en GitHub [Init. GitHub & Git Foundations](https://youtu.be/WxMFZncm12s)
 4. En este vídeo YouTube que sigue se enseña como hacer comits para guardar nuestro proyecto [Commit. GitHub & Git Foundations](https://youtu.be/A-Cll9jEnnM)
-4. En este vídeo YouTube que sigue se enseña como hacer ver los cambios producidos entre distintas versiones [Diff. GitHub & Git Foundations](https://youtu.be/RXSriVcoI70)
+4. En este vídeo YouTube que sigue se enseña como hacer ver los cambios producidos entre distintas versiones utilizando `diff` [Diff. GitHub & Git Foundations](https://youtu.be/RXSriVcoI70)
+4. En este vídeo YouTube que sigue se enseña como hacer ver la historia de nuestros commits usando `log` [Log. GitHub & Git Foundations](https://youtu.be/Ew8HQsFyVHo)
 
