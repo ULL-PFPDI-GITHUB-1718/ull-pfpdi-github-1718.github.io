@@ -15,6 +15,7 @@
 
 * [Sobre el curso](README.md)
 * [Hello GitHub](hello-github.md)
+* [Hello Git](hello-git.md)
 * [GitHub Pages](github-pages.md)
 * [Organizations](organizations.md)
 * [Classroom](classroom.md)
