@@ -2,6 +2,8 @@
 
 1. Comienza leyendo [Version control concepts and best practices: Introduction to version control](https://homes.cs.washington.edu/~mernst/advice/version-control.html#Introduction_to_version_control) de [Michael Ernst](https://homes.cs.washington.edu/~mernst/)
     - **Lee solo la introducción**, solo si te sientes experto lee el resto de las secciones del artículo
+2. Que es Git y como puede ayudarnos: [What is VCS? (Git-SCM). Git Basics #1](https://youtu.be/8oRjP8yj2Wo)
+2. Que es Git y como puede ayudarnos: [What is Git? (Git-SCM). Git Basics #2](https://youtu.be/uhtzxPU7Bz0)
 2. Registrate en GitHub si  no lo has hecho ya: [Join gitHub](https://github.com/join) 
 3. Realiza este tutorial introductorio: [GitHub Hello World Guide](https://guides.github.com/activities/hello-world/)
 
